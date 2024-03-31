@@ -1,0 +1,47 @@
+dragon_egg = {
+	name = egg
+	group = Quantumgroup
+	option = {
+		name = yes_dragon
+		text = dragon_egg_NAME
+		desc = dragon_egg_DESC
+	}	
+	option = {
+		name = no_egg
+		text = no_egg_NAME
+		desc = no_egg_DESC
+	}	
+
+}
+
+unsullied = {
+	name = unsullied
+	group = Quantumgroup
+	option = {
+		name = yes_slaves
+		text = unsullied_NAME
+		desc = unsullied_DESC
+	}	
+	option = {
+		name = no_unsullied
+		text = no_unsullied_NAME
+		desc = no_unsullied_DESC
+	}	
+
+}
+
+customiser = {
+	name = Customiser
+	group = Quantumgroup
+	option = {
+		name = yes_customiser
+		text = yes_customiser_NAME
+		desc = yes_customiser_DESC
+	}	
+	option = {
+		name = no_customiser
+		text = no_customiser_NAME
+		desc = no_customiser_DESC
+	}	
+
+}

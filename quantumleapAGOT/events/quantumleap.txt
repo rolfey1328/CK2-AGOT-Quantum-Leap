@@ -1,0 +1,796 @@
+namespace = quantum
+character_event = {
+	id = quantum.1
+	hide_window = yes
+	desc = EVTDESCquantum.1
+
+	ai = no
+	is_triggered_only = yes
+	
+    immediate = { 
+    	save_event_target_as = target_dead_ruler
+
+    	  	
+    	player_heir = {
+    		character_event = { id = quantum.90 days = 4}
+
+    	}
+    }
+    }
+
+character_event = {
+	id = quantum.90
+	desc = EVTDESCquantum.2
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPA_quantum.2
+
+	}
+	option = {
+		name = EVTOPB_quantum.2
+		character_event = { id = quantum.50}
+
+	}
+	option = {
+		name = EVTOP_quantum.200
+		character_event = { id = quantum.200}
+
+	}
+	option = {
+		name = EVTOP_quantum.500
+		character_event = { id = quantum.500}
+
+	}
+	
+}
+
+##Westerosi
+character_event = {
+	id = quantum.50
+	desc = EVTDESCquantum.2
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPD_quantum.2
+		character_event = { id = quantum.100}
+
+	}
+	option = {
+		name = EVTOPB_quantum.west
+		character_event = { id = quantum.3}
+
+	}
+	option = {
+		name = EVTOPC_quantum.west
+		character_event = { id = quantum.4}
+
+	}
+	option = {
+		name = EVTOPD_quantum.west
+		character_event = { id = quantum.5}
+
+	}
+	
+}
+
+character_event = {
+	id = quantum.3
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				culture_group = andal
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+    	}
+}
+
+character_event = {
+	id = quantum.4
+	desc = EVTDESCquantum.4
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				culture_group = iron_isles_culture
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+character_event = {
+	id = quantum.5
+	desc = EVTDESCquantum.4
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				OR = {
+					culture = stone_dornish
+					culture = sand_dornish
+					culture = salt_dornish					
+				}
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+##More westeros
+character_event = {
+	id = quantum.100
+	desc = EVTDESCquantum.2
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPH_quantum.2
+		character_event = { id = quantum.90}
+
+	}
+	option = {
+		name = EVTOPF_quantum.west
+		character_event = { id = quantum.101}
+
+	}
+	option = {
+		name = EVTOPG_quantum.west
+		character_event = { id = quantum.102}
+
+	}
+	option = {
+		name = EVTOPH_quantum.west
+		character_event = { id = quantum.103}
+
+	}
+	
+}
+
+character_event = {
+	id = quantum.101
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				culture_group = first_men
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+character_event = {
+	id = quantum.102
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				culture_group = free_folk
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+character_event = {
+	id = quantum.103
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				culture = high_valyrian
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+
+
+##Essos
+character_event = {
+	id = quantum.200
+	desc = EVTDESCquantum.2
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOP_quantum.300
+		character_event = { id = quantum.300}
+
+	}
+	option = {
+		name = EVTOP_quantum.201
+		character_event = { id = quantum.201}
+
+	}
+	option = {
+		name = EVTOP_quantum.202
+		character_event = { id = quantum.202}
+
+	}
+	option = {
+		name = EVTOP_quantum.203
+		character_event = { id = quantum.203}
+
+	}
+	
+}
+
+
+character_event = {
+	id = quantum.201
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				NOT = {culture = gogossosi}
+				NOT = {religion_group = corsair_group}
+				NOT = {religion_group = pirate_group}
+				OR = {
+					culture_group = free_cities
+					culture = rhoynar					
+				}
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+character_event = {
+	id = quantum.202
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				NOT = {culture = high_valyrian}
+				culture_group = valyrian
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+character_event = {
+	id = quantum.203
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				culture_group = ghiscari_group
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+##Further East
+character_event = {
+	id = quantum.300
+	desc = EVTDESCquantum.2
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOP_quantum.400
+		character_event = { id = quantum.400}
+
+	}
+	option = {
+		name = EVTOP_quantum.301
+		character_event = { id = quantum.301}
+
+	}
+	option = {
+		name = EVTOP_quantum.302
+		character_event = { id = quantum.302}
+
+	}
+	option = {
+		name = EVTOP_quantum.303
+		character_event = { id = quantum.303}
+
+	}
+	
+}
+
+
+character_event = {
+	id = quantum.301
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				OR = {
+					culture_group = dothraki_group
+					culture_group = sarnor_group					
+				}
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+character_event = {
+	id = quantum.302
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				OR = {
+					culture_group = moraqi_group
+					culture_group = qarth_group					
+				}
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+character_event = {
+	id = quantum.303
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				OR = {
+					culture_group = hyrkoon_group
+					culture_group = jogos_nhai_group
+					culture_group = nghai_group					
+				}
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+
+##Most East
+character_event = {
+	id = quantum.400
+	desc = EVTDESCquantum.2
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPH_quantum.2
+		character_event = { id = quantum.90}
+
+	}
+	option = {
+		name = EVTOP_quantum.401
+		character_event = { id = quantum.401}
+
+	}
+	option = {
+		name = EVTOP_quantum.402
+		character_event = { id = quantum.402}
+
+	}
+	option = {
+		name = EVTOP_quantum.403
+		character_event = { id = quantum.403}
+
+	}
+	
+}
+
+character_event = {
+	id = quantum.401
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				OR = {
+					culture_group = yi_ti_group
+					culture_group = jade_islands_group					
+				}
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+character_event = {
+	id = quantum.402
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				culture_group = asshai_group
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+character_event = {
+	id = quantum.403
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				OR = {
+					culture_group = summer_islands 
+					culture_group = naath_group					
+				}
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+
+##Interesting ones
+character_event = {
+	id = quantum.500
+	desc = EVTDESCquantum.2
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPH_quantum.2
+		character_event = { id = quantum.90}
+
+	}
+	option = {
+		name = EVTOP_quantum.501
+		character_event = { id = quantum.501}
+
+	}
+	option = {
+		name = EVTOP_quantum.502
+		character_event = { id = quantum.502}
+
+	}
+	option = {
+		name = EVTOP_quantum.503
+		character_event = { id = quantum.503 tooltip = EVTOOLTIP_quantum.503 }
+
+	}
+	
+}
+
+character_event = {
+	id = quantum.501
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				OR = {
+					religion_group = pirate_group
+					religion_group = corsair_group					
+				}
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+character_event = {
+	id = quantum.502
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				higher_tier_than = baron 
+				is_theocracy = no
+				is_landed = yes
+				NOT = {culture_group = winter_group}
+				NOT = {culture_group = unoccupied_group}
+				NOT = {culture_group = old_races}
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+character_event = {
+	id = quantum.503
+	desc = EVTDESCquantum.3
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_character = {
+			limit = { 
+				is_landed = yes
+				OR = {
+					has_artifact = dragon_egg
+					trait = dragon_rider	
+					trait = resurrected_by_rhllor	
+					trait = chosen_by_rhllor	
+					trait = favored_by_rhllor	
+					trait = dragon_dreams		
+					trait = greenseer	
+					trait = greensight						
+				}
+			}
+			save_event_target_as = quantumleaper
+		}
+        set_player_character = event_target:quantumleaper
+	any_player = {character_event = {id = quantum.600 days = 10 }}
+	any_player = {character_event = {id = quantum.700 days = 11 }}
+	any_player = {character_event = {id = quantum.800 days = 12 }}
+	}
+}
+
+
+character_event = {
+	id = quantum.600
+	
+	days = 4
+	desc = EVTDESCquantum.600
+
+	only_playable = yes
+	is_triggered_only = yes
+
+	trigger = {
+	has_game_rule = { name = dragon_egg value = yes_dragon }
+	}
+
+	option = {
+		name = EVTOP_quantum.601
+
+	}
+	option = {
+		name = EVTOP_quantum.602
+		add_artifact = dragon_egg
+	}
+	
+}
+character_event = {
+	id = quantum.700
+	
+	days = 4
+	desc = EVTDESCquantum.700
+
+	only_playable = yes
+	is_triggered_only = yes
+
+	trigger = {
+	has_game_rule = { name = unsullied value = yes_slaves }
+	}
+	option = {
+		name = EVTOP_quantum.701
+
+	}
+	option = {
+		name = EVTOP_quantum.702
+					capital_scope = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						home = PREV
+						owner = ROOT
+						troops = {
+							unsullied = { 1000 1000 }
+						}
+						attrition = 0.5
+						reinforces = no
+						maintenance = yes
+					}
+				}
+			}
+	}
+	
+}
+
+#house customiser
+character_event = {
+	id = quantum.800
+	
+	days = 4
+	desc = EVTDESCquantum.800
+
+	only_playable = yes
+	is_triggered_only = yes
+
+	trigger = {
+	has_game_rule = { name = customiser value = yes_customiser }
+	}
+
+	option = {
+		name = EVTOP_quantum.801
+
+	}
+	option = {
+		name = EVTOP_quantum.802
+		add_trait = house_customizer
+	}
+	
+}
